@@ -1,0 +1,23 @@
+// Hàm kiểm tra nếu người dùng có thể sử dụng lệnh !afk
+function canAFK(player) {
+    // Kiểm tra nếu người chơi là Spectator hoặc trận đấu đã kết thúc
+    return player.team === 0 || game.state === 0; // 0 là team Spectator và game.state = 0 là trận đấu đã kết thúc
+}
+
+// Hàm xử lý lệnh !afk
+function handleAFKCommand(player) {
+    if (canAFK(player)) {
+        // Đặt người chơi vào Spectator
+        player.team = 0; 
+        sendChat(`Player ${player.name} has gone AFK and is now a Spectator.`);
+    } else {
+        sendChat(`Sorry ${player.name}, you cannot use !afk while in-game.`);
+    }
+}
+
+// Hàm lắng nghe các lệnh từ người chơi
+game.onPlayerChat(function(player, message) {
+    if (message === "!afk") {
+        handleAFKCommand(player);
+    }
+});

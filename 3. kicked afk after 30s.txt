@@ -1,0 +1,27 @@
+const MAX_INACTIVITY_TIME = 30; // Thời gian tối đa không di chuyển (giây)
+const playerInactivityTime = {}; // Lưu trữ thời gian không di chuyển của mỗi người chơi
+
+// Hàm kiểm tra và kick người chơi nếu không di chuyển trong quá thời gian quy định
+function checkInactivePlayers() {
+    const currentTime = Date.now();
+
+    for (const playerId in playerInactivityTime) {
+        const lastMoveTime = playerInactivityTime[playerId];
+
+        if ((currentTime - lastMoveTime) / 1000 > MAX_INACTIVITY_TIME) {
+            const player = getPlayerById(playerId);
+            if (player) {
+                sendChat(`${player.name} has been kicked for inactivity.`);
+                game.kickPlayer(playerId); // Kick người chơi không hoạt động
+            }
+        }
+    }
+}
+
+// Hàm theo dõi khi người chơi di chuyển
+game.onPlayerMove(function(player) {
+    playerInactivityTime[player.id] = Date.now(); // Cập nhật thời gian di chuyển của người chơi
+});
+
+// Cập nhật bộ đếm thời gian mỗi giây để kiểm tra inactivity
+setInterval(checkInactivePlayers, 1000); // Kiểm tra mỗi giây

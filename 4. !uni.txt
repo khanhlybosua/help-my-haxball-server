@@ -1,0 +1,445 @@
+ // SOCCER TEAMS //
+
+    if (message == "!bra") {
+        if (player.team == 1) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!bra";
+                room.setTeamColors(Team.RED, 0, 0x3347B3, [0x018434, 0xf8de2e, 0xf8de2e]);
+                room.sendAnnouncement("Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục [Brazil]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!bra") {
+        if (player.team == 2) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!bra";
+                room.setTeamColors(Team.BLUE, 0, 0x3347B3, [0x018434, 0xF8DE2E, 0xF8DE2E]);
+                room.sendAnnouncement("Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục [Brazil]! ", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!ger") {
+        if (player.team == 1) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!ale";
+                room.setTeamColors(Team.RED, 90, 0xFFFFFF, [0x121003, 0xC70000, 0xF5C600]);
+                room.sendAnnouncement("Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục [Germany]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!ger") {
+        if (player.team == 2) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!ale";
+                room.setTeamColors(Team.BLUE, 90, 0xFFFFFF, [0x121003, 0xC70000, 0xF5C600]);
+                room.sendAnnouncement("Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục [Germany]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!arg") {
+        if (player.team == 1) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!arg";
+                room.setTeamColors(Team.RED, 90, 0xE3AC42, [0x74ACDF, 0xFFFFFF, 0x74ACDF]);
+                room.sendAnnouncement("Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục [Argentina]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!arg") {
+        if (player.team == 2) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!arg";
+                room.setTeamColors(Team.BLUE, 90, 0xE3AC42, [0x74ACDF, 0xFFFFFF, 0x74ACDF]);
+                room.sendAnnouncement("Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục [Argentina]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!spa") {
+        if (player.team == 1) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!esp";
+                room.setTeamColors(Team.RED, 0, 0xDBA640, [0x7B111A, 0x7B111A, 0x7B111A]);
+                room.sendAnnouncement("Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục [Spain]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!spa") {
+        if (player.team == 2) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!esp";
+                room.setTeamColors(Team.BLUE, 0, 0xDBA640, [0x7B111A, 0x7B111A, 0x7B111A]);
+                room.sendAnnouncement("Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục [Spain]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!por") {
+        if (player.team == 1) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!por";
+                room.setTeamColors(Team.RED, 120, 0xDBA640, [0x7B111A, 0x7B111A, 0x384F43]);
+                room.sendAnnouncement("Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục [Portugal]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!por") {
+        if (player.team == 2) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!por";
+                room.setTeamColors(Team.BLUE, 120, 0xDBA640, [0x7B111A, 0x7B111A, 0x384F43]);
+                room.sendAnnouncement("Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục [Portugal]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!ita") {
+        if (player.team == 1) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!ita";
+                room.setTeamColors(Team.RED, 60, 0xFFFFFF, [0x0249a8, 0x0366EB, 0x0082d3]);
+                room.sendAnnouncement("Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục [Italy]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!ita") {
+        if (player.team == 2) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!ita";
+                room.setTeamColors(Team.BLUE, 60, 0xFFFFFF, [0x0249a8, 0x0366EB, 0x0082d3]);
+                room.sendAnnouncement("Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục [Italy]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!uru") {
+        if (player.team == 1) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!uru";
+                room.setTeamColors(Team.RED, 0, 0xFFFFFF, [0x0082d3, 0x0082d3, 0x0082d3]);
+                room.sendAnnouncement("Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục [Uruguay]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!uru") {
+        if (player.team == 2) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!uru";
+                room.setTeamColors(Team.BLUE, 0, 0xFFFFFF, [0x0082d3, 0x0082d3, 0x0082d3]);
+                room.sendAnnouncement("Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục [Uruguay]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!fra") {
+        if (player.team == 1) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!fra";
+                room.setTeamColors(Team.RED, 0, 0xD19E1F, [0x202c46, 0x202c46, 0x202c46]);
+                room.sendAnnouncement("Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục [France]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!fra") {
+        if (player.team == 2) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!fra";
+                room.setTeamColors(Team.BLUE, 0, 0xD19E1F, [0x202c46, 0x202c46, 0x202c46]);
+                room.sendAnnouncement("Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục [France]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!eng") {
+        if (player.team == 1) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!ing";
+                room.setTeamColors(Team.RED, 90, 0x0f2544, [0x408CFF, 0xA1C6FF, 0xe0e4e9]);
+                room.sendAnnouncement("Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục [England]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!eng") {
+        if (player.team == 2) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!ing";
+                room.setTeamColors(Team.BLUE, 90, 0x0f2544, [0x408CFF, 0xA1C6FF, 0xe0e4e9]);
+                room.sendAnnouncement("Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục [England]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!bel") {
+        if (player.team == 1) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!bel";
+                room.setTeamColors(Team.RED, 90, 0xD19E1F, [0x151619, 0x990011, 0x990011]);
+                room.sendAnnouncement("Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục [Belgium]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!bel") {
+        if (player.team == 2) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!bel";
+                room.setTeamColors(Team.BLUE, 90, 0xD19E1F, [0x151619, 0x990011, 0x990011]);
+                room.sendAnnouncement("Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục [Belgium]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!net") {
+        if (player.team == 1) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!hol";
+                room.setTeamColors(Team.RED, 90, 0x2B0E09, [0xdc6024, 0xdc6024, 0xdc6024]);
+                room.sendAnnouncement("Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục [Netherlands]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+    if (message == "!net") {
+        if (player.team == 2) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!hol";
+                room.setTeamColors(Team.RED, 90, 0x2B0E09, [0xdc6024, 0xdc6024, 0xdc6024]);
+                room.sendAnnouncement("Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục [Netherlands]!", null, 0x30F55F, "bold");
+            }
+        }
+    }
+
+
+    if (message == "!bah") {
+        if (player.team == 1) {
+            if (player.id == TeamR[0].id) {
+                CaptainChoice = "!bah";
+                room.setTeamColors(Team.RED, 0, 0xFFFFFF, [0x0A4AE8, 0xF20533, 0x0A4AE8]);
+                room.sendAnnouncement(player.name + "Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục BAHIA! ", null, 0x30F55F, "bold");
+            }
+            if (message == "!bah") {
+                if (player.team == 2) {
+                    if (player.id == TeamB[0].id) {
+                        CaptainChoice = "!bah";
+                        room.setTeamColors(Team.BLUE, 0, 0xFFFFFF, [0x0A4AE8, 0xF20533, 0x0A4AE8]);
+                        room.sendAnnouncement(player.name + "Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục BAHIA! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!vit") {
+                if (player.team == 1) {
+                    if (player.id == TeamR[0].id) {
+                        CaptainChoice = "!vit";
+                        room.setTeamColors(Team.RED, 90, 0xFFFFFF, [0xFF1D0D, 0x000000]);
+                        room.sendAnnouncement(player.name + "Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục VITÓRIA! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!vit") {
+                if (player.team == 2) {
+                    if (player.id == TeamB[0].id) {
+                        CaptainChoice = "!vit";
+                        room.setTeamColors(Team.BLUE, 90, 0xFFFFFF, [0xFF1D0D, 0x000000]);
+                        room.sendAnnouncement(player.name + "Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục VITÓRIA! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!flu") {
+                if (player.team == 1) {
+                    if (player.id == TeamR[0].id) {
+                        CaptainChoice = "!flu";
+                        room.setTeamColors(Team.RED, 0, 0xFFFFFF, [0x2A524F, 0x871F39, 0x2A524F]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform FLUMINENSE! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!flu") {
+                if (player.team == 2) {
+                    if (player.id == TeamB[0].id) {
+                        CaptainChoice = "!flu";
+                        room.setTeamColors(Team.BLUE, 0, 0xFFFFFF, [0x2A524F, 0x871F39, 0x2A524F]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform FLUMINENSE! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!for") {
+                if (player.team == 1) {
+                    if (player.id == TeamR[0].id) {
+                        CaptainChoice = "!for";
+                        room.setTeamColors(Team.RED, 90, 0xFFFFFF, [0x182587, 0xE32026, 0x182587]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform FORTALEZA! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!for") {
+                if (player.team == 2) {
+                    if (player.id == TeamB[0].id) {
+                        CaptainChoice = "!for";
+                        room.setTeamColors(Team.BLUE, 90, 0xFFFFFF, [0x182587, 0xE32026, 0x182587]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform FORTALEZA! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!cap") {
+                if (player.team == 1) {
+                    if (player.id == TeamR[0].id) {
+                        CaptainChoice = "!cap";
+                        room.setTeamColors(Team.RED, 45, 0xFFFFFF, [0xE8153F, 0x000000, 0xE8153F]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform ATHLETICO PARANAENSE! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!cap") {
+                if (player.team == 2) {
+                    if (player.id == TeamB[0].id) {
+                        CaptainChoice = "!cap";
+                        room.setTeamColors(Team.BLUE, 45, 0xFFFFFF, [0xE8153F, 0x000000, 0xE8153F]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform ATHLETICO PARANAENSE! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!rem") {
+                if (player.team == 1) {
+                    if (player.id == TeamR[0].id) {
+                        CaptainChoice = "!rem";
+                        room.setTeamColors(Team.RED, 90, 0xFFFFFF, [0x000000]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform REMO! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!rem") {
+                if (player.team == 2) {
+                    if (player.id == TeamB[0].id) {
+                        CaptainChoice = "!rem";
+                        room.setTeamColors(Team.BLUE, 90, 0xFFFFFF, [0x000000]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform REMO! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!cui") {
+                if (player.team == 1) {
+                    if (player.id == TeamR[0].id) {
+                        CaptainChoice = "!cui";
+                        room.setTeamColors(Team.RED, 90, 0xFFFFFF, [0x217430, 0xF4D42F]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform CUIABÁ! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!cui") {
+                if (player.team == 2) {
+                    if (player.id == TeamB[0].id) {
+                        CaptainChoice = "!cui";
+                        room.setTeamColors(Team.BLUE, 90, 0xFFFFFF, [0x217430, 0xF4D42F]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform CUIABÁ! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!jvn") {
+                if (player.team == 1) {
+                    if (player.id == TeamR[0].id) {
+                        CaptainChoice = "!jvn";
+                        room.setTeamColors(Team.RED, 0, 0x00964B, [0x00964B, 0xFFFFFF, 0x00964B]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform JUVENTUDE! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!jvn") {
+                if (player.team == 2) {
+                    if (player.id == TeamB[0].id) {
+                        CaptainChoice = "!jvn";
+                        room.setTeamColors(Team.BLUE, 0, 0x00964B, [0x00964B, 0xFFFFFF, 0x00964B]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform JUVENTUDE! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!utd3") {
+                if (player.team == 1) {
+                    if (player.id == TeamR[0].id) {
+                        CaptainChoice = "!utd3";
+                        room.setTeamColors(Team.RED, -37, 0xF0CF0D, [0x1E416D, 0x235287, 0x1463A4]);
+                        room.sendAnnouncement(player.name + "Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục MANCHESTER UNITED 3º KIT! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!utd3") {
+                if (player.team == 2) {
+                    if (player.id == TeamB[0].id) {
+                        CaptainChoice = "!utd3";
+                        room.setTeamColors(Team.BLUE, -37, 0xF0CF0D, [0x1E416D, 0x235287, 0x1463A4]);
+                        room.sendAnnouncement(player.name + "Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục MANCHESTER UNITED 3º KIT! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!spo") {
+                if (player.team == 1) {
+                    if (player.id == TeamR[0].id) {
+                        CaptainChoice = "!spo";
+                        room.setTeamColors(Team.RED, 0, 0xFFE600, [0xFF0D0D, 0x000000, 0xFF0D0D]);
+                        room.sendAnnouncement(player.name + "Đội trưởng của đội đỏ, "+ player.name + ", chọn đồng phục SPORT! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!spo") {
+                if (player.team == 2) {
+                    if (player.id == TeamB[0].id) {
+                        CaptainChoice = "!spo";
+                        room.setTeamColors(Team.BLUE, 0, 0xFFE600, [0xFF0D0D, 0x000000, 0xFF0D0D]);
+                        room.sendAnnouncement(player.name + "Đội trưởng của đội xanh, "+ player.name + ", chọn đồng phục SPORT! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!gol") {
+                if (player.team == 1) {
+                    if (player.id == TeamR[0].id) {
+                        CaptainChoice = "!gol";
+                        room.setTeamColors(Team.RED, 90, 0x23CC4A, [0x0C4519]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform GOIÁS! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!gol") {
+                if (player.team == 2) {
+                    if (player.id == TeamB[0].id) {
+                        CaptainChoice = "!gol";
+                        room.setTeamColors(Team.BLUE, 90, 0x23CC4A, [0x0C4519]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform GOIÁS! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!vas") {
+                if (player.team == 1) {
+                    if (player.id == TeamR[0].id) {
+                        CaptainChoice = "!vas";
+                        room.setTeamColors(Team.RED, 140, 0xFF1212, [0xFFFFFF, 0x002033, 0xFFFFFF]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform VASCO! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!vas") {
+                if (player.team == 2) {
+                    if (player.id == TeamB[0].id) {
+                        CaptainChoice = "!vas";
+                        room.setTeamColors(Team.BLUE, 140, 0xFF1212, [0xFFFFFF, 0x002033, 0xFFFFFF]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform VASCO! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!pen") {
+                if (player.team == 1) {
+                    if (player.id == TeamR[0].id) {
+                        CaptainChoice = "!pen";
+                        room.setTeamColors(Team.RED, 90, 0xFFFFFF, [0xFAC904, 0x000000, 0xFAC904]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform PENHÃROL! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+            if (message == "!pen") {
+                if (player.team == 2) {
+                    if (player.id == TeamB[0].id) {
+                        CaptainChoice = "!pen";
+                        room.setTeamColors(Team.BLUE, 90, 0xFFFFFF, [0xFAC904, 0x000000, 0xFAC904]);
+                        room.sendAnnouncement(player.name + "The team captain, "+ player.name + ", chose the uniform PENHÃROL! ", null, 0x30F55F, "bold");
+                    }
+                }
+            }
+
+            if (message.toLowerCase().substr(0, 10) == '!register ') {
+                setRegister(player, message.substr(10));
+                return false;
+            }
+ 
+    if (["!uni", "!unis"].includes(message[0].toLowerCase())) {
+            room.sendAnnouncement("_______________________________________", player.id, Cor.Amarelo, "bold");
+            room.sendAnnouncement("Soccer teams:", player.id, Cor.Amarelo, "bold");
+            room.sendAnnouncement("Brazil [!bra], Germany [!ger], Argentina [!arg], Spain [!spa], Portugal [!por]", player.id, Cor.Branco, "normal");
+            room.sendAnnouncement("Italy [!ita], Uruguay [!uru], France [!fra], England [!eng], Belgium [!bel], Netherlands [!net]", player.id, Cor.Branco, "normal");

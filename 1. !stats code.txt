@@ -1,0 +1,92 @@
+const fs = require('fs');
+const statsFilePath = 'playerStats.json'; // Đường dẫn tới tệp lưu trữ thống kê người chơi
+
+let playerStats = {}; // Đối tượng lưu trữ thống kê người chơi
+
+// Hàm lưu thống kê vào tệp JSON
+function savePlayerStats() {
+    fs.writeFileSync(statsFilePath, JSON.stringify(playerStats, null, 2));
+}
+
+// Hàm tải thống kê từ tệp JSON
+function loadPlayerStats() {
+    if (fs.existsSync(statsFilePath)) {
+        const data = fs.readFileSync(statsFilePath, 'utf8');
+        playerStats = JSON.parse(data);
+    }
+}
+
+// Hàm khởi tạo thống kê cho người chơi mới
+function initializePlayerStats(player) {
+    if (!playerStats[player.id]) {
+        playerStats[player.id] = {
+            matchesPlayed: 0,
+            wins: 0,
+            losses: 0,
+            goals: 0,
+            assists: 0
+        };
+    }
+}
+
+// Cập nhật thống kê khi trận đấu kết thúc
+function updateStatsForMatch(winner, loser) {
+    // Cập nhật thống kê cho người thắng
+    playerStats[winner.id].matchesPlayed++;
+    playerStats[winner.id].wins++;
+    
+    // Cập nhật thống kê cho người thua
+    playerStats[loser.id].matchesPlayed++;
+    playerStats[loser.id].losses++;
+}
+
+// Cập nhật bàn thắng và kiến tạo
+game.onPlayerGoal(function(player, assistPlayer) {
+    if (playerStats[player.id]) {
+        playerStats[player.id].goals++;
+    }
+    if (assistPlayer && playerStats[assistPlayer.id]) {
+        playerStats[assistPlayer.id].assists++;
+    }
+});
+
+// Hàm hiển thị thống kê khi người chơi nhập !stats
+function showStats(player) {
+    const stats = playerStats[player.id];
+    if (stats) {
+        sendChat(`${player.name}'s Stats:`);
+        sendChat(`Matches Played: ${stats.matchesPlayed}`);
+        sendChat(`Wins: ${stats.wins}`);
+        sendChat(`Losses: ${stats.losses}`);
+        sendChat(`Goals: ${stats.goals}`);
+        sendChat(`Assists: ${stats.assists}`);
+    } else {
+        sendChat(`${player.name} has no stats yet.`);
+    }
+}
+
+// Lắng nghe lệnh !stats
+game.onPlayerChat(function(player, message) {
+    if (message === "!stats") {
+        showStats(player);
+    }
+});
+
+// Lắng nghe khi trận đấu kết thúc và cập nhật thống kê
+game.onGameEnd(function(winningPlayers) {
+    const loserPlayers = game.players.filter(p => !winningPlayers.includes(p));
+    if (winningPlayers.length > 0 && loserPlayers.length > 0) {
+        updateStatsForMatch(winningPlayers[0], loserPlayers[0]);
+    }
+
+    // Lưu thống kê vào tệp sau khi mỗi trận đấu kết thúc
+    savePlayerStats();
+});
+
+// Lắng nghe khi có người chơi vào phòng để khởi tạo thống kê
+game.onPlayerJoin(function(player) {
+    initializePlayerStats(player);
+});
+
+// Tải thống kê từ tệp JSON khi server khởi động lại
+loadPlayerStats();
